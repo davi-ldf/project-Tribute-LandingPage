@@ -7,62 +7,138 @@
 body {
     margin: 0;
     padding: 0;
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    background-image: url('../imgs/binzo2.png'); /* Define a imagem de fundo para o corpo inteiro */
-    background-size: cover; /* Faz a imagem cobrir todo o fundo */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Impede a repetição da imagem */
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh; /* Garante que o fundo ocupe 100% da altura da janela */
+    background-color: black; /* Fundo padrão para evitar espaços em branco */
 }
-
 
 header {
     display: flex;
     justify-content: center;
     color: white;
-    
+    padding: 20px;
 }
 
 .container {
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
 
 .container img {
     width: 200px;
     height: 280px;
-    
 }
 
 .container2 {
     display: flex;
     justify-content: center;
-
 }
+
 .container2 h3, .container3 p {
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
     margin-top: 10px;
 }
+
 .container3 p {
     justify-content: center;
     align-self: center;
     text-align: center;
     max-width: 1200px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     font-size: 21px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-#banner {
-    display: flex;
-    justify-content: center;
-    background-color: black;
 
-}
-#banner2 {
+#banner, #banner2, #banner3 {
+    position: relative; /* Necessário para o posicionamento da camada escurecedora */
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100%;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 670px; /* Altura do banner */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+}
+
+#banner {
+    background-image: url('../imgs/binzo2.png'); /* Imagem de fundo do primeiro banner */
+}
+
+.banner-title h1 {
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 120px;
+}
+.banner-content h2 {
+    font-size: 21px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.banner-content, .banner-content2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2; /* Coloca o conteúdo acima da camada escurecedora */
+    color: white;
+    text-align: left; /* Centraliza o texto */
+    width: 800px;
+    margin-left: 160px;
+    margin-right: 160px;
+    line-height: 40px;
+}
+.banner-content2 {
+    line-height: 40px;
+    margin-top: 180px;
+}
+.banner-content li {
+    line-height: 40px;
+}
+
+#banner2 {
+    background-image: url('../imgs/second-background.jpg'); /* Imagem de fundo do segundo banner */
+}
+
+#banner2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Camada escurecedora */
+    z-index: 1;
+}
+
+.banner2-content {
+    position: relative;
+    z-index: 2; /* Coloca o conteúdo acima da camada escurecedora */
+    color: white;
+    text-align: center; /* Centraliza o texto */
+}
+
+#banner3 {
+    background-image: url('../imgs/third-background.jpg'); /* Imagem de fundo do terceiro banner */
+}
+
+#banner3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Camada escurecedora */
+    z-index: 1;
+}
+
+.banner3-content {
+    position: relative;
+    z-index: 2; /* Coloca o conteúdo acima da camada escurecedora */
+    color: white;
+    text-align: center; /* Centraliza o texto */
 }
