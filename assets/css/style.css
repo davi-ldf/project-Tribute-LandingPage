@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    background-image: url('../imgs/binzo2.png'); /* Define a imagem de fundo para o corpo inteiro */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh; /* Garante que o fundo ocupe 100% da altura da janela */
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    color: white;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container img {
+    width: 200px;
+    height: 280px;
+    
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+
+}
+.container2 h3, .container3 p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-top: 10px;
+}
+.container3 p {
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    max-width: 1200px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 21px;
+}
+#banner {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+
+}
+#banner2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
