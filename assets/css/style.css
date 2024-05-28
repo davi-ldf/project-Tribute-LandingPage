@@ -92,24 +92,68 @@ header {
     line-height: 40px;
 }
 @media (max-width: 1100px) {
-    .banner-content, .banner-content2, .banner2-content  {
+    .banner-content, .banner-content2, .banner2-content, .banner3-content  {
         margin-left: 20px;
         margin-right: 0;
     }
-    .banner-title h1, .banner2-title {
+    .banner-title h1{
         text-align: left;
         font-size: 40px;
         margin-bottom: 50px;
     }
+
+    .banner2-title h1 {
+        margin-top: 150px;
+    }
+}
 @media (max-width: 700px) {
-    #banner, #banner2 {
+    #banner, #banner2, #banner3 {
         flex-wrap: wrap;
 
     }
+    .container3 p{
+        font-size: 14px;
+    }
+
+    .banner2-title h1 {
+        margin-top: 400px;
+    }
+
+    .banner2-content ul {
+        margin-bottom: 100px;
+    }
+
+    .banner3-content {
+        margin-top: 450px;
+    }
 }
 
+@media (max-width: 400px) {
+    #banner, #banner2, #banner3 {
+        flex-wrap: wrap;
 
+    }
+
+    .container3 p{
+        font-size: 14px;
+    }
+
+    .banner2-title h1 {
+        margin-top: 400px;
+    }
+    .banner-content ul, .banner-content2 ul {
+        font-size: 17px;
+    }
+
+    .banner2-content ul {
+        font-size: 17px;
+    }
+
+    .banner3-content {
+        margin-top: 450px;
+    }
 }
+
 .banner-content2 {
     line-height: 40px;
     margin-top: 180px;
