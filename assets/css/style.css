@@ -67,7 +67,7 @@ header {
     background-image: url('../imgs/binzo2.png'); /* Imagem de fundo do primeiro banner */
 }
 
-.banner-title h1 {
+.banner-title h1, .banner2-title h1 {
     text-align: left;
     font-size: 40px;
     margin-bottom: 120px;
@@ -78,7 +78,7 @@ header {
     margin-bottom: 10px;
 }
 
-.banner-content, .banner-content2 {
+.banner-content, .banner-content2, .banner2-content {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -92,17 +92,17 @@ header {
     line-height: 40px;
 }
 @media (max-width: 1100px) {
-    .banner-content, .banner-content2  {
+    .banner-content, .banner-content2, .banner2-content  {
         margin-left: 20px;
         margin-right: 0;
     }
-    .banner-title h1 {
+    .banner-title h1, .banner2-title {
         text-align: left;
         font-size: 40px;
         margin-bottom: 50px;
     }
 @media (max-width: 700px) {
-    #banner {
+    #banner, #banner2 {
         flex-wrap: wrap;
 
     }
@@ -119,7 +119,7 @@ header {
 }
 
 #banner2 {
-    background-image: url('../imgs/second-background.jpg'); /* Imagem de fundo do segundo banner */
+    background-image: url('../imgs/hair.jpg'); /* Imagem de fundo do segundo banner */
 }
 
 #banner2::after {
@@ -137,11 +137,12 @@ header {
     position: relative;
     z-index: 2; /* Coloca o conteúdo acima da camada escurecedora */
     color: white;
-    text-align: center; /* Centraliza o texto */
+    text-align: left; /* Centraliza o texto */
+    font-size: 18px;
 }
 
 #banner3 {
-    background-image: url('../imgs/third-background.jpg'); /* Imagem de fundo do terceiro banner */
+    background-image: url('../imgs/panel.png'); /* Imagem de fundo do terceiro banner */
 }
 
 #banner3::after {
@@ -160,4 +161,19 @@ header {
     z-index: 2; /* Coloca o conteúdo acima da camada escurecedora */
     color: white;
     text-align: center; /* Centraliza o texto */
+}
+.banner3-content h2, .banner3-content h3 {
+    font-size: 31px;
+}
+.footer {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    margin-top: 10px;
+}
+.icons img{
+    margin-top: 20px;
+    width: 20px;
+    margin-right: 5px;
+    margin-bottom: 40px;
 }
